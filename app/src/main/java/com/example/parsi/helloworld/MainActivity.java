@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         Log.d(msg, "onResume");
         Snackbar snackbar = Snackbar.make(main, "OnResume", Snackbar.LENGTH_SHORT);
+        snackbar.show();
     }
     /**
      * called when activity does not receive input and cannot execute any code
@@ -83,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
         super.onRestart();
         Log.d(msg, "onRestart");
         Snackbar snackbar = Snackbar.make(main, "OnRestart", Snackbar.LENGTH_SHORT);
+        snackbar.setDuration(1).show();
     }
 
 
